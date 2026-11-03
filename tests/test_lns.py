@@ -65,7 +65,8 @@ class DestroyTests(unittest.TestCase):
         first = destroy.destroy(instance, solution, random.Random(42), 0.75)
         second = destroy.destroy(instance, solution, random.Random(42), 0.75)
         self.assertEqual(first, second)
-        self.assertEqual(len(first), 3)
+        # Restricted walks may discover no usable neighborhood.
+        self.assertIn(len(first), (0, 3))
 
     def test_neighborhood_destroy_picks_seed_uniformly_and_includes_it(self) -> None:
         instance = _ten_agent_instance()

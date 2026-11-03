@@ -1,0 +1,112 @@
+PPS verification results
+
+57 working-tree tests plus 13 legacy tests loaded read-only from Git HEAD.
+Legacy test_lns.py is restored in the working tree with the requested assertion change.
+No other deleted legacy files were restored.
+
+Working-tree tests: 57
+Additional legacy tests from Git HEAD: test_benchmark 6
+Additional legacy tests from Git HEAD: test_models_and_conflicts 4
+Additional legacy tests from Git HEAD: test_prioritized_planning 3
+test_does_not_collect_walking_agent_itself (test_agent_based_destroy.AgentBasedRegressionTests.test_does_not_collect_walking_agent_itself) ... ok
+test_empty_instance (test_agent_based_destroy.AgentBasedRegressionTests.test_empty_instance) ... ok
+test_finds_blocker_in_a_collision_free_solution (test_agent_based_destroy.AgentBasedRegressionTests.test_finds_blocker_in_a_collision_free_solution) ... ok
+test_full_neighborhood_includes_all_agents (test_agent_based_destroy.AgentBasedRegressionTests.test_full_neighborhood_includes_all_agents) ... ok
+test_hypothetical_walk_does_not_modify_real_paths (test_agent_based_destroy.AgentBasedRegressionTests.test_hypothetical_walk_does_not_modify_real_paths) ... ok
+test_instance_change_resets_cached_map_and_tabu (test_agent_based_destroy.AgentBasedRegressionTests.test_instance_change_resets_cached_map_and_tabu) ... ok
+test_lns_remains_feasible_monotone_and_reproducible (test_agent_based_destroy.AgentBasedRegressionTests.test_lns_remains_feasible_monotone_and_reproducible) ... ok
+test_no_random_padding_when_walk_finds_no_other_agent (test_agent_based_destroy.AgentBasedRegressionTests.test_no_random_padding_when_walk_finds_no_other_agent) ... ok
+test_permanent_goal_blocker (test_agent_based_destroy.AgentBasedRegressionTests.test_permanent_goal_blocker) ... ok
+test_repair_failure_has_a_distinct_reason (test_agent_based_destroy.AgentBasedRegressionTests.test_repair_failure_has_a_distinct_reason) ... ok
+test_reproducible_sequences_with_tabu_state (test_agent_based_destroy.AgentBasedRegressionTests.test_reproducible_sequences_with_tabu_state) ... ok
+test_returns_discovered_subset_without_padding_to_target (test_agent_based_destroy.AgentBasedRegressionTests.test_returns_discovered_subset_without_padding_to_target) ... ok
+test_reverse_edge_blocker (test_agent_based_destroy.AgentBasedRegressionTests.test_reverse_edge_blocker) ... ok
+test_size_one_is_unavailable_like_reference (test_agent_based_destroy.AgentBasedRegressionTests.test_size_one_is_unavailable_like_reference) ... ok
+test_tabu_chooses_next_delayed_agent_and_then_resets (test_agent_based_destroy.AgentBasedRegressionTests.test_tabu_chooses_next_delayed_agent_and_then_resets) ... ok
+test_unavailable_neighborhood_skips_repair_and_logs_reason (test_agent_based_destroy.AgentBasedRegressionTests.test_unavailable_neighborhood_skips_repair_and_logs_reason) ... ok
+test_uses_obstacle_aware_shortest_distance (test_agent_based_destroy.AgentBasedRegressionTests.test_uses_obstacle_aware_shortest_distance) ... ok
+test_vertex_blocker (test_agent_based_destroy.AgentBasedRegressionTests.test_vertex_blocker) ... ok
+test_empty_neighborhoods_count_toward_segment_with_zero_reward (test_alns.AdaptiveSelectorTests.test_empty_neighborhoods_count_toward_segment_with_zero_reward) ... ok
+test_roulette_boundaries (test_alns.AdaptiveSelectorTests.test_roulette_boundaries) ... ok
+test_roulette_distribution_matches_weights (test_alns.AdaptiveSelectorTests.test_roulette_distribution_matches_weights) ... ok
+test_run_lns_rewards_best_accept_reject_and_repair_failure (test_alns.AdaptiveSelectorTests.test_run_lns_rewards_best_accept_reject_and_repair_failure) ... ok
+test_segment_average_update_reset_and_unselected_operator (test_alns.AdaptiveSelectorTests.test_segment_average_update_reset_and_unselected_operator) ... ok
+test_agent_based_is_used_for_every_iteration (test_alns.NeighborhoodModeTests.test_agent_based_is_used_for_every_iteration) ... ok
+test_alns_is_reproducible_and_logs_concrete_operator_names (test_alns.NeighborhoodModeTests.test_alns_is_reproducible_and_logs_concrete_operator_names) ... ok
+test_default_keeps_the_original_choice_rng_sequence (test_alns.NeighborhoodModeTests.test_default_keeps_the_original_choice_rng_sequence) ... ok
+test_invalid_mode_is_rejected (test_alns.NeighborhoodModeTests.test_invalid_mode_is_rejected) ... ok
+test_map_based_is_used_for_every_iteration (test_alns.NeighborhoodModeTests.test_map_based_is_used_for_every_iteration) ... ok
+test_agent_based_destroy_is_seed_deterministic (test_lns.DestroyTests.test_agent_based_destroy_is_seed_deterministic) ... ok
+test_neighborhood_destroy_expands_by_map_hops (test_lns.DestroyTests.test_neighborhood_destroy_expands_by_map_hops) ... ok
+test_neighborhood_destroy_picks_seed_uniformly_and_includes_it (test_lns.DestroyTests.test_neighborhood_destroy_picks_seed_uniformly_and_includes_it) ... ok
+test_random_destroy_uses_ceil_neighborhood_size (test_lns.DestroyTests.test_random_destroy_uses_ceil_neighborhood_size) ... ok
+test_end_to_end_best_solution_is_conflict_free (test_lns.LNSTests.test_end_to_end_best_solution_is_conflict_free) ... ok
+test_greedy_acceptance_condition_for_every_iteration (test_lns.LNSTests.test_greedy_acceptance_condition_for_every_iteration) ... ok
+test_initial_pp_failure_propagates_unchanged (test_lns.LNSTests.test_initial_pp_failure_propagates_unchanged) ... ok
+test_no_deterministic_fixed_point (test_lns.LNSTests.test_no_deterministic_fixed_point) ... ok
+test_repair_failure_is_logged_and_keeps_current_and_best (test_lns.LNSTests.test_repair_failure_is_logged_and_keeps_current_and_best) ... ok
+test_seed_makes_runs_reproducible (test_lns.LNSTests.test_seed_makes_runs_reproducible) ... ok
+test_repair_failure_does_not_mutate_input (test_lns.RepairTests.test_repair_failure_does_not_mutate_input) ... ok
+test_repair_order_is_randomized_by_rng (test_lns.RepairTests.test_repair_order_is_randomized_by_rng) ... ok
+test_repair_preserves_all_fixed_paths_exactly (test_lns.RepairTests.test_repair_preserves_all_fixed_paths_exactly) ... ok
+test_crossing_agents_are_repaired (test_lra_star.LRAStarTests.test_crossing_agents_are_repaired) ... ok
+test_ten_agents_terminate_with_solution_or_failure (test_lra_star.LRAStarTests.test_ten_agents_terminate_with_solution_or_failure) ... ok
+test_two_cell_swap_reports_deadlock (test_lra_star.LRAStarTests.test_two_cell_swap_reports_deadlock) ... ok
+test_crossing_agents_on_empty_5x5 (test_pps.PPSTests.test_crossing_agents_on_empty_5x5) ... ok
+test_duplicate_starts_or_goals_are_rejected (test_pps.PPSTests.test_duplicate_starts_or_goals_are_rejected) ... ok
+test_empty_and_already_solved_instances_need_no_steps (test_pps.PPSTests.test_empty_and_already_solved_instances_need_no_steps) ... ok
+test_max_steps_includes_swap_substeps (test_pps.PPSTests.test_max_steps_includes_swap_substeps) ... ok
+test_negative_budget_is_rejected (test_pps.PPSTests.test_negative_budget_is_rejected) ... ok
+test_no_existing_astar_or_pp_solver_is_called (test_pps.PPSTests.test_no_existing_astar_or_pp_solver_is_called) ... ok
+test_obstacle_detour_uses_only_local_moves (test_pps.PPSTests.test_obstacle_detour_uses_only_local_moves) ... ok
+test_opposing_agents_in_single_width_corridor_fail (test_pps.PPSTests.test_opposing_agents_in_single_width_corridor_fail) ... ok
+test_physically_trapped_agent_reports_deadlock (test_pps.PPSTests.test_physically_trapped_agent_reports_deadlock) ... ok
+test_push_moves_blocker_and_follower_in_one_tick (test_pps.PPSTests.test_push_moves_blocker_and_follower_in_one_tick) ... ok
+test_pushed_goal_agent_returns_to_its_goal (test_pps.PPSTests.test_pushed_goal_agent_returns_to_its_goal) ... ok
+test_swap_uses_side_cells_and_waits_without_edge_conflict (test_pps.PPSTests.test_swap_uses_side_cells_and_waits_without_edge_conflict) ... ok
+test_zero_budget_fails_for_unsolved_instance (test_pps.PPSTests.test_zero_budget_fails_for_unsolved_instance) ... ok
+test_bottleneck_is_reproducible (test_benchmark.BenchmarkTests.test_bottleneck_is_reproducible) ... ok
+test_corridor_pp_fails_or_has_high_soc (test_benchmark.BenchmarkTests.test_corridor_pp_fails_or_has_high_soc) ... ok
+test_dense_empty_is_reproducible (test_benchmark.BenchmarkTests.test_dense_empty_is_reproducible) ... ok
+test_generators_are_reproducible (test_benchmark.BenchmarkTests.test_generators_are_reproducible) ... ok
+test_hub_is_reproducible (test_benchmark.BenchmarkTests.test_hub_is_reproducible) ... ok
+test_random_obstacle_instance_has_valid_free_endpoints (test_benchmark.BenchmarkTests.test_random_obstacle_instance_has_valid_free_endpoints) ... ok
+test_edge_swap_conflict (test_models_and_conflicts.ModelsAndConflictsTests.test_edge_swap_conflict) ... ok
+test_instance_rejects_blocked_endpoint (test_models_and_conflicts.ModelsAndConflictsTests.test_instance_rejects_blocked_endpoint) ... ok
+test_soc_counts_moves_and_waits_until_arrival (test_models_and_conflicts.ModelsAndConflictsTests.test_soc_counts_moves_and_waits_until_arrival) ... ok
+test_vertex_conflict_after_short_path_has_finished (test_models_and_conflicts.ModelsAndConflictsTests.test_vertex_conflict_after_short_path_has_finished) ... ok
+test_custom_order_must_be_a_permutation (test_prioritized_planning.PrioritizedPlanningTests.test_custom_order_must_be_a_permutation) ... ok
+test_pp_builds_conflict_free_solution_with_wait (test_prioritized_planning.PrioritizedPlanningTests.test_pp_builds_conflict_free_solution_with_wait) ... ok
+test_pp_raises_when_higher_priority_goal_blocks_corridor (test_prioritized_planning.PrioritizedPlanningTests.test_pp_raises_when_higher_priority_goal_blocks_corridor) ... ok
+
+----------------------------------------------------------------------
+Ran 70 tests in 0.085s
+
+OK
+
+Reproduction command (PowerShell, from E:\fuxian):
+
+@'
+import subprocess
+import sys
+import types
+import unittest
+
+def load_head(name, path):
+    source = subprocess.check_output(['git', 'show', 'HEAD:' + path], text=True, encoding='utf-8')
+    module = types.ModuleType(name)
+    module.__file__ = path
+    sys.modules[name] = module
+    exec(compile(source, 'HEAD:' + path, 'exec'), module.__dict__)
+    return module
+
+suite = unittest.defaultTestLoader.discover('tests')
+print('Working-tree tests:', suite.countTestCases(), flush=True)
+load_head('benchmark', 'benchmark.py')
+for name in ('test_benchmark', 'test_models_and_conflicts', 'test_prioritized_planning'):
+    tests = unittest.defaultTestLoader.loadTestsFromModule(load_head(name, 'tests/' + name + '.py'))
+    print('Additional legacy tests from Git HEAD:', name, tests.countTestCases(), flush=True)
+    suite.addTests(tests)
+result = unittest.TextTestRunner(stream=sys.stdout, verbosity=2).run(suite)
+raise SystemExit(not result.wasSuccessful())
+'@ | python -B -

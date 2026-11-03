@@ -1,0 +1,6 @@
+variant,init_method,neighborhood_mode,initial_soc,final_soc,runtime_s,status,iterations,error
+Base-ALNS,pp,alns,688,666,13.999070,completed,1000,
+EECBS-ALNS,eecbs,alns,669,666,14.357226,completed,1000,
+PPS-Random,pps,random,Failed,,0.005322,failed,0,PPS deadlock
+Agent-based,pp,agent_based,688,666,2.353501,completed,1000,
+Map-based,pp,map_based,688,666,19.677303,completed,1000,
