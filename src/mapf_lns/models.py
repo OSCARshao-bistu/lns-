@@ -63,6 +63,12 @@ class Solution(dict[int, Path]):
             raise ValueError("paths must contain at least one position")
         return sum(len(path) - 1 for path in self.values())
 
+    def compute_makespan(self) -> int:
+        """Return the longest path's move count; an empty solution has value 0."""
+        if any(not path for path in self.values()):
+            raise ValueError("paths must contain at least one position")
+        return max((len(path) - 1 for path in self.values()), default=0)
+
 
 @dataclass(frozen=True, slots=True)
 class Conflict:
